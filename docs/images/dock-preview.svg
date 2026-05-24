@@ -1,0 +1,169 @@
+<svg width="960" height="300" viewBox="0 0 960 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(40,40,45,0.72)"/>
+      <stop offset="100%" stop-color="rgba(25,25,30,0.68)"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.08)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="rgba(0,0,0,0.45)"/>
+    </filter>
+    <filter id="iconShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+  </defs>
+
+  <!-- ============ P2 BADGES ============ -->
+
+  <rect x="20" y="6" width="100" height="20" rx="6" fill="rgba(0,180,255,0.15)" stroke="rgba(0,180,255,0.3)" stroke-width="1"/>
+  <text x="24" y="20" fill="rgba(0,180,255,0.7)" font-size="10" font-family="system-ui,sans-serif" font-weight="600">P2 新增功能</text>
+
+  <!-- Tray arrow -->
+  <line x1="880" y1="28" x2="880" y2="8" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <polygon points="876,12 884,12 880,6" fill="rgba(255,255,255,0.25)"/>
+  <text x="838" y="20" fill="rgba(255,255,255,0.35)" font-size="9" font-family="system-ui,sans-serif">系统托盘</text>
+
+  <!-- Alt+Space arrow -->
+  <line x1="40" y1="60" x2="40" y2="28" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <polygon points="36,32 44,32 40,26" fill="rgba(255,255,255,0.25)"/>
+  <text x="8" y="44" fill="rgba(255,255,255,0.35)" font-size="9" font-family="system-ui,sans-serif">Alt+Space</text>
+
+  <!-- ============ DOCK BAR ============ -->
+
+  <rect x="60" y="60" width="840" height="88" rx="18" fill="url(#glass)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="60" y="60" width="840" height="44" rx="18" fill="url(#glow)"/>
+  <line x1="80" y1="62" x2="880" y2="62" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Separator -->
+  <line x1="560" y1="84" x2="560" y2="124" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+  <!-- ============ PINNED APPS (匹配实际默认值) ============ -->
+
+  <!-- 文件资源管理器 -->
+  <g transform="translate(108, 68)" filter="url(#iconShadow)">
+    <rect x="0" y="0" width="72" height="72" rx="14" fill="#4A90D9"/>
+    <rect x="0" y="0" width="72" height="72" rx="14" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    <text x="36" y="46" fill="white" font-size="18" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="600">文</text>
+  </g>
+
+  <!-- 终端 (鱼眼放大 - 鼠标位置) -->
+  <g transform="translate(208, 56)" filter="url(#iconShadow)">
+    <rect x="0" y="0" width="84" height="84" rx="14" fill="#2D2D2D"/>
+    <rect x="0" y="0" width="84" height="84" rx="14" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <text x="42" y="54" fill="#4AF626" font-size="28" text-anchor="middle" font-family="monospace" font-weight="bold">&gt;_</text>
+  </g>
+
+  <!-- Edge -->
+  <g transform="translate(320, 62)" filter="url(#iconShadow)">
+    <rect x="0" y="0" width="76" height="76" rx="14" fill="#1B8B4C"/>
+    <text x="38" y="50" fill="white" font-size="22" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="600">E</text>
+  </g>
+
+  <!-- 计算器 -->
+  <g transform="translate(420, 68)" filter="url(#iconShadow)">
+    <rect x="0" y="0" width="72" height="72" rx="14" fill="#3061A3"/>
+    <text x="36" y="46" fill="white" font-size="22" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="600">+</text>
+  </g>
+
+  <!-- 记事本 -->
+  <g transform="translate(516, 68)" filter="url(#iconShadow)">
+    <rect x="0" y="0" width="72" height="72" rx="14" fill="#B37A3A"/>
+    <text x="36" y="46" fill="white" font-size="22" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="600">记</text>
+  </g>
+
+  <!-- ============ RUNNING APPS ============ -->
+
+  <!-- Chrome (运行中) -->
+  <g transform="translate(596, 68)" filter="url(#iconShadow)">
+    <rect x="0" y="0" width="72" height="72" rx="14" fill="#E8432A"/>
+    <text x="36" y="46" fill="white" font-size="22" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="600">C</text>
+    <circle cx="36" cy="66" r="3" fill="rgba(255,255,255,0.5)"/>
+  </g>
+
+  <!-- VS Code (运行中) -->
+  <g transform="translate(696, 68)" filter="url(#iconShadow)">
+    <rect x="0" y="0" width="72" height="72" rx="14" fill="#0078D4"/>
+    <svg x="12" y="12" width="48" height="48" viewBox="0 0 32 32">
+      <polygon points="20.74,6 11.46,14.96 5.74,10.22 2,13.44 2,18.56 5.74,21.78 11.46,17.04 20.74,26 30,22.64 30,9.36" fill="white"/>
+    </svg>
+    <circle cx="36" cy="66" r="3" fill="rgba(255,255,255,0.5)"/>
+  </g>
+
+  <!-- Trash Bin -->
+  <g transform="translate(796, 68)">
+    <svg x="16" y="16" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 6h18M8 6V4a1 1 0 011-1h6a1 1 0 011 1v2M19 6l-1.5 14a2 2 0 01-2 1.5H8.5a2 2 0 01-2-1.5L5 6"/>
+    </svg>
+  </g>
+
+  <!-- ============ CURSOR INDICATOR ============ -->
+
+  <line x1="290" y1="58" x2="290" y2="148" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="3,3"/>
+  <polygon points="286,54 294,54 290,48" fill="rgba(255,255,255,0.3)"/>
+  <text x="268" y="160" fill="rgba(255,255,255,0.3)" font-size="10" font-family="system-ui,sans-serif">鼠标位置 → 鱼眼放大</text>
+
+  <!-- 拖拽排序标注 -->
+  <line x1="250" y1="56" x2="310" y2="56" stroke="rgba(255,200,50,0.2)" stroke-width="1" stroke-dasharray="2,3"/>
+  <text x="230" y="52" fill="rgba(255,200,50,0.4)" font-size="9" font-family="system-ui,sans-serif">← 拖拽排序 →</text>
+
+  <!-- 右键菜单标注 -->
+  <line x1="340" y1="148" x2="340" y2="170" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <text x="305" y="180" fill="rgba(255,255,255,0.25)" font-size="9" font-family="system-ui,sans-serif">右键弹出菜单</text>
+
+  <!-- 拖拽移除标注 -->
+  <line x1="516" y1="56" x2="796" y2="56" stroke="rgba(255,200,50,0.2)" stroke-width="1" stroke-dasharray="2,3"/>
+  <text x="630" y="54" fill="rgba(255,200,50,0.4)" font-size="9" font-family="system-ui,sans-serif">← 拖拽至垃圾桶移除 →</text>
+
+  <!-- 点击标注 -->
+  <line x1="210" y1="148" x2="210" y2="168" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <text x="195" y="178" fill="rgba(255,255,255,0.25)" font-size="9" font-family="system-ui,sans-serif">点击启动应用</text>
+
+  <!-- Section labels -->
+  <text x="230" y="180" fill="rgba(255,255,255,0.2)" font-size="9" font-family="system-ui,sans-serif">固定应用 (5个默认项)</text>
+  <text x="620" y="180" fill="rgba(255,255,255,0.2)" font-size="9" font-family="system-ui,sans-serif">运行中应用 (SetWinEventHook 窗口监控)</text>
+
+  <!-- ============ P2 INFO PANELS ============ -->
+
+  <g transform="translate(20, 196)">
+    <rect x="0" y="0" width="220" height="88" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="12" y="18" fill="rgba(0,180,255,0.7)" font-size="11" font-family="system-ui,sans-serif" font-weight="600">系统托盘</text>
+    <text x="12" y="34" fill="rgba(255,255,255,0.5)" font-size="9" font-family="system-ui,sans-serif">TrayIconBuilder + Menu</text>
+    <text x="12" y="48" fill="rgba(255,255,255,0.35)" font-size="9" font-family="system-ui,sans-serif">左键: 切换 Dock 可见性</text>
+    <text x="12" y="62" fill="rgba(255,255,255,0.35)" font-size="9" font-family="system-ui,sans-serif">右键: 显示/隐藏 · 设置 · 退出</text>
+    <circle cx="190" cy="32" r="12" fill="#222" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <rect x="183" y="24" width="14" height="16" rx="2" fill="#4A90D9"/>
+  </g>
+
+  <g transform="translate(255, 196)">
+    <rect x="0" y="0" width="220" height="88" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="12" y="18" fill="rgba(0,180,255,0.7)" font-size="11" font-family="system-ui,sans-serif" font-weight="600">全局快捷键</text>
+    <text x="12" y="34" fill="rgba(255,255,255,0.5)" font-size="9" font-family="system-ui,sans-serif">tauri-plugin-global-shortcut</text>
+    <text x="12" y="48" fill="rgba(255,255,255,0.35)" font-size="9" font-family="system-ui,sans-serif">Alt+Space: 切换 Dock 显示</text>
+    <text x="12" y="62" fill="rgba(255,255,255,0.35)" font-size="9" font-family="system-ui,sans-serif">setup() 注册，全局可用</text>
+    <rect x="136" y="14" width="72" height="22" rx="4" fill="rgba(255,255,255,0.08)"/>
+    <text x="144" y="29" fill="rgba(255,255,255,0.5)" font-size="10" font-family="system-ui,sans-serif" font-weight="bold">Alt</text>
+    <text x="170" y="29" fill="rgba(255,255,255,0.3)" font-size="10" font-family="system-ui,sans-serif">+</text>
+    <text x="182" y="29" fill="rgba(255,255,255,0.5)" font-size="10" font-family="system-ui,sans-serif" font-weight="bold">Space</text>
+  </g>
+
+  <g transform="translate(490, 196)">
+    <rect x="0" y="0" width="220" height="88" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="12" y="18" fill="rgba(0,180,255,0.7)" font-size="11" font-family="system-ui,sans-serif" font-weight="600">窗口监控</text>
+    <text x="12" y="34" fill="rgba(255,255,255,0.5)" font-size="9" font-family="system-ui,sans-serif">SetWinEventHook 后台线程</text>
+    <text x="12" y="48" fill="rgba(255,255,255,0.35)" font-size="9" font-family="system-ui,sans-serif">监听 创建/销毁/焦点 事件</text>
+    <text x="12" y="62" fill="rgba(255,255,255,0.35)" font-size="9" font-family="system-ui,sans-serif">AppHandle::emit → 前端 store</text>
+  </g>
+
+  <g transform="translate(725, 196)">
+    <rect x="0" y="0" width="215" height="88" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="12" y="18" fill="rgba(0,180,255,0.7)" font-size="11" font-family="system-ui,sans-serif" font-weight="600">交互功能</text>
+    <text x="12" y="34" fill="rgba(255,255,255,0.5)" font-size="9" font-family="system-ui,sans-serif">点击启动 · 拖拽排序 · 拖拽移除</text>
+    <text x="12" y="48" fill="rgba(255,255,255,0.35)" font-size="9" font-family="system-ui,sans-serif">右键菜单: 打开 · 从Dock移除</text>
+    <text x="12" y="62" fill="rgba(255,255,255,0.35)" font-size="9" font-family="system-ui,sans-serif">launch_app IPC · reorder_items IPC</text>
+  </g>
+
+  <text x="20" y="294" fill="rgba(255,255,255,0.15)" font-size="8" font-family="system-ui,sans-serif">MyDockFinder · P1+ (Dock/鱼眼/自动隐藏/拖拽排序/拖拽移除/右键菜单/点击启动) + P2 (系统托盘/SetWinEventHook窗口监控/Alt+Space/关闭到托盘)</text>
+</svg>

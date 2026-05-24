@@ -1,0 +1,12 @@
+[source.crates-io]
+replace-with = "ustc"
+
+[source.ustc]
+registry = "sparse+https://mirrors.ustc.edu.cn/crates.io-index/"
+
+# Cross-compilation to Windows x86_64
+# Uses mingw-w64 GCC as the linker
+# Install with: sudo apt install mingw-w64
+# Or extract locally to /tmp/mingw-prefix
+[target.x86_64-pc-windows-gnu]
+linker = "x86_64-w64-mingw32-gcc"
