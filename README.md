@@ -1,2 +1,2 @@
 # MacDockFinder
-Dock and finder for Mac OS
+Mac OS Dock and finder for Windows
